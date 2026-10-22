@@ -1,0 +1,32 @@
+ <p class="aviso" id="mensaje">
+        Modo de demostración: todavía no está conectado
+        al dispenser real.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Información del sistema</h2>
+      <p>📡 Conexión: pendiente</p>
+      <p>⚙️ Dispositivo: ESP32 WROOM-32</p>
+      <p>🐕 Función: dispensar alimento</p>
+    </section>
+  </main>
+
+  <footer>
+    Dispenser Pet · Proyecto de alimentación automática
+  </footer>
+
+  <script>
+    function probarDispenser() {
+      const cantidad =
+        document.getElementById("porcion").value;
+
+      document.getElementById("mensaje").textContent =
+        "Prueba de diseño: seleccionaste " +
+        cantidad +
+        (cantidad == 1 ? " porción." : " porciones.") +
+        " El dispenser todavía no está conectado.";
+    }
+  </script>
+</body>
+</html>
